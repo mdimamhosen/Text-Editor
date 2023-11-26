@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <script
+      src="https://kit.fontawesome.com/6fe2253753.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="containermain">
+        <!-- font size container -->
+        <div id="font-size-container">
+          <input
+            type="number"
+            id="font-size"
+            min="1"
+            max="50"
+            value="13"
+            class="outline-none text-black font-semibold text-[20px] text-center size"
+          />
+        </div>
+        <!-- font style -->
+        <div id="font-style">
+          <button>
+            <i class="fa-solid fa-bold bold"></i>
+          </button>
+          <button>
+            <i class="fa-solid fa-italic italic"></i>
+          </button>
+          <button>
+            <i class="fa-solid fa-underline underline"></i>
+          </button>
+        </div>
+        <!-- alignment -->
+        <div id="font-alignment">
+          <button>
+            <i class="fa-solid fa-align-left left"></i>
+          </button>
+          <button>
+            <i class="fa-solid fa-align-center middle"></i>
+          </button>
+          <button>
+            <i class="fa-solid fa-align-right right"></i>
+          </button>
+        </div>
+        <!-- font color and slash -->
+        <div id="font-color-slash">
+          <button class="font-semibold aA">aA</button>
+          <button>
+            <i class="fa-solid fa-text-slash slashT"></i>
+          </button>
+          <input type="color" class="color" name="" id="color" />
+        </div>
+      </div>
+      <br />
+      <!-- textarea -->
+      <div class="textAreaContainer">
+        <textarea
+          name=""
+          id="textarea"
+          placeholder="Your text here"
+          class="w-full h-[300px] resize-none p-3 outline-none border rounded-md"
+        ></textarea>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

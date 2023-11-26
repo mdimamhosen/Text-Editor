@@ -1,0 +1,159 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: #83a7c5;
+}
+
+.containermain {
+  height: 10vh;
+  width: 80vw;
+  max-width: 600px;
+  background-color: white;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#font-color-slash,
+#font-alignment,
+#font-size-container,
+#font-style {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 10px;
+}
+#font-color-slash,
+#font-alignment,
+#font-style {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 10px;
+}
+.hrLine {
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+}
+#color {
+  border: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .containermain {
+    width: 60vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .containermain {
+    width: 40vw;
+  }
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: #83a7c5;
+}
+
+.containermain {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+
+  height: 10vh;
+  width: 80vw;
+  max-width: 600px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#font-color-slash,
+#font-alignment,
+#font-size-container,
+#font-style {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2em;
+}
+#font-size-container {
+  outline: none;
+}
+
+.hrLine {
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+}
+
+#color {
+  border: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .containermain {
+    width: 60vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .containermain {
+    width: 40vw;
+  }
+}
+
+textarea {
+  width: 100%;
+  height: 150px; /* Adjust the initial height as needed */
+  resize: vertical; /* Allow vertical resizing */
+  padding: 10px;
+  margin: 10px 0;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 13px;
+}
+
+/* Responsive adjustments */
+@media only screen and (min-width: 768px) {
+  textarea {
+    height: 200px; /* Adjust the height for larger screens */
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  textarea {
+    height: 250px; /* Adjust the height for even larger screens */
+  }
+}
+
+/* ______________ */
+.size {
+  text-align: center;
+}
