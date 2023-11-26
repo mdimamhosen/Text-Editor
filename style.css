@@ -157,3 +157,6 @@ textarea {
 .size {
   text-align: center;
 }
+button {
+  padding: 2px;
+}
